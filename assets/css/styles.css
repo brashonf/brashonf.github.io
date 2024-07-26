@@ -16,7 +16,6 @@ header {
     justify-content: center;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Hide overflow for stars */
 }
 
 .star {
@@ -41,11 +40,9 @@ header {
 }
 
 /* Sections */
-.section-projects, .section-about, .section-contact {
+.section-projects {
     background-color: #f0e68c; /* Light pastel yellow */
     padding: 50px 0;
-} 
+}
 
 /* Rest of your styles... */
-
-
