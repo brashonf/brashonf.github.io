@@ -5,56 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brashon Ford - Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
 </head>
 <body>
 <header>
-    <div class="container">
-        <h1>Brashon Ford</h1>
-        <p>Data Scientist | Healthcare & Finance Enthusiast</p>
-        <button id="scrollButton">View Portfolio</button>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+    <h1 id="typedText"></h1>
+    <p>Data Scientist | Healthcare & Finance Enthusiast</p>
+    <button id="scrollButton">View Portfolio</button>
 </header>
 <main>
-    <section id="introduction" class="section-intro">
-        <div class="container">
-            <h2>Welcome!</h2>
-            <p>Hello! I'm a data scientist with a background in education and a passion for healthcare and finance. Explore my portfolio to learn more about my work and experience.</p>
-        </div>
-    </section>
-    <section id="projects" class="section-projects">
+    <section id="projects" class="section-projects" data-aos="fade-up">
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Project Title 1</h3>
                 <p>Description of your project. Technologies used: Python, R, SQL, etc.</p>
             </div>
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Description of your project. Technologies used: Python, R, SQL, etc.</p>
-            </div>
-            <!-- Add more projects as needed -->
         </div>
     </section>
-    <section id="about" class="section-about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Detailed information about your professional background, education, and personal interests.</p>
-        </div>
-    </section>
-    <section id="contact" class="section-contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>You can reach me via email at <a href="mailto:brashonford@gmail.com">brashonford@gmail.com</a>.</p>
-        </div>
-    </section>
+    <!-- Add more sections as needed -->
 </main>
 <footer>
     <div class="container">
@@ -64,5 +34,3 @@
 <script src="assets/js/script.js"></script>
 </body>
 </html>
-
-
