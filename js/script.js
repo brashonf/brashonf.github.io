@@ -35,5 +35,4 @@ function type() {
 window.onload = function() {
     createStars();
     type(); // Call typing function
-    AOS.init(); // Initialize AOS
 };
