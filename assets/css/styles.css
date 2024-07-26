@@ -1,111 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f8f5f9; /* Soft pastel background */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffcccb, #ffebcc, #cc99ff); /* Pastel gradient */
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 header {
-    background-color: #ffb6c1; /* Light pink */
-    color: #fff;
-    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for header */
+    height: 100vh; /* Full height of the viewport */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    position: relative;
+    overflow: hidden; /* Hide overflow for stars */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background: white; /* Color of the stars */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
 }
 
-header p {
-    margin: 0;
-    font-size: 1.2em;
+@keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+.typing {
+    border-right: 2px solid white; /* Cursor effect */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow */
+    animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+    font-size: 3em; /* Adjust font size */
+    color: #ff69b4; /* Pastel pink for text */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+/* Sections */
+.section-projects, .section-about, .section-contact {
+    background-color: #f0e68c; /* Light pastel yellow */
+    padding: 50px 0;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+/* Rest of your styles... */
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-h2 {
-    color: #ff69b4; /* Hot pink */
-}
-
-.project {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #ffb6c1; /* Light pink border */
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-a {
-    color: #ff69b4; /* Hot pink */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.section-intro {
-    background-color: #e6e6fa; /* Lavender */
-    padding: 40px 0;
-    text-align: center;
-}
-
-.section-projects {
-    background-color: #f0fff0; /* Honeydew */
-    padding: 40px 0;
-}
-
-.section-about {
-    background-color: #ffe4e1; /* Misty rose */
-    padding: 40px 0;
-}
-
-.section-contact {
-    background-color: #f5f5dc; /* Beige */
-    padding: 40px 0;
-}
-
-#scrollButton {
-    background-color: #ff69b4; /* Hot pink */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#scrollButton:hover {
-    background-color: #ff1493; /* Deeper pink on hover */
-}
 
