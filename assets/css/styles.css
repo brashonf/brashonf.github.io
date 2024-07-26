@@ -1,107 +1,40 @@
-/* General Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #ffcccb, #ffebcc, #cc99ff); /* Pastel gradient */
-    color: #333;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
-.container {
-    max-width: 1200px; /* Set a max width for the content */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add some padding */
-}
-
-/* Header Styles */
-header {
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for header */
-    height: 100vh; /* Full height of the viewport */
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden; /* Hide overflow for stars */
-}
-
-/* Star Styles */
-.star {
+#stars, #stars2, #stars3 {
     position: absolute;
-    border-radius: 50%;
-    background: white; /* Color of the stars */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
-    animation: twinkle 1s infinite; /* Adjust the duration */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-@keyframes twinkle {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+#stars {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: 0;
 }
 
-/* Typing Effect Styles */
-.typing {
-    border-right: 2px solid white; /* Cursor effect */
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: hidden; /* Hide overflow */
-    animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
-    font-size: 3em; /* Adjust font size */
-    color: #ff69b4; /* Pastel pink for text */
+#stars2 {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/stars2.png) repeat top center;
+    z-index: 1;
+    animation: move-twink-back 200s linear infinite;
 }
 
-/* Section Styles */
-section {
-    padding: 50px 0; /* Add padding to sections */
+#stars3 {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/stars3.png) repeat top center;
+    z-index: 2;
+    animation: move-twink-back 150s linear infinite;
 }
 
-.section-projects {
-    background-color: #f0e68c; /* Light pastel yellow */
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
 }
 
-.section-about {
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for about */
-}
-
-.section-contact {
-    background-color: #f0e68c; /* Light pastel yellow */
-}
-
-/* Project Styles */
-.project {
-    margin: 20px 0; /* Add margin for each project */
-    padding: 20px;
-    border: 1px solid #ccc; /* Border for project boxes */
-    border-radius: 5px; /* Rounded corners */
-    background-color: rgba(255, 255, 255, 0.8); /* Light background */
-    transition: transform 0.3s ease; /* Smooth transform on hover */
-}
-
-.project:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Footer Styles */
-footer {
-    background-color: rgba(255, 255, 255, 0.8); /* Light background */
-    padding: 20px 0;
-    text-align: center; /* Center text in footer */
-}
-
-/* Text Sizes */
-h1 {
-    font-size: 3em; /* Large font for the main title */
-}
-
-h2 {
-    font-size: 2.5em; /* Slightly smaller for section titles */
-}
-
-h3 {
-    font-size: 2em; /* Title for project */
-}
-
-p {
-    font-size: 1.2em; /* Adjust paragraph text size */
-}
+/* Add more styles for your sections, text, buttons, etc. */
