@@ -33,6 +33,7 @@ header {
     border-radius: 50%;
     background: white; /* Color of the stars */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
+    animation: twinkle 1s infinite; /* Adjust the duration */
 }
 
 @keyframes twinkle {
@@ -55,10 +56,6 @@ section {
     padding: 50px 0; /* Add padding to sections */
 }
 
-.section-intro {
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for intro */
-}
-
 .section-projects {
     background-color: #f0e68c; /* Light pastel yellow */
 }
@@ -78,6 +75,11 @@ section {
     border: 1px solid #ccc; /* Border for project boxes */
     border-radius: 5px; /* Rounded corners */
     background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 /* Footer Styles */
@@ -87,3 +89,19 @@ footer {
     text-align: center; /* Center text in footer */
 }
 
+/* Text Sizes */
+h1 {
+    font-size: 3em; /* Large font for the main title */
+}
+
+h2 {
+    font-size: 2.5em; /* Slightly smaller for section titles */
+}
+
+h3 {
+    font-size: 2em; /* Title for project */
+}
+
+p {
+    font-size: 1.2em; /* Adjust paragraph text size */
+}
