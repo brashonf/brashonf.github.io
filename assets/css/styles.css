@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,6 +7,13 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+.container {
+    max-width: 1200px; /* Set a max width for the content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some padding */
+}
+
+/* Header Styles */
 header {
     background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for header */
     height: 100vh; /* Full height of the viewport */
@@ -16,8 +24,10 @@ header {
     justify-content: center;
     text-align: center;
     position: relative;
+    overflow: hidden; /* Hide overflow for stars */
 }
 
+/* Star Styles */
 .star {
     position: absolute;
     border-radius: 50%;
@@ -30,6 +40,7 @@ header {
     50% { opacity: 0.5; }
 }
 
+/* Typing Effect Styles */
 .typing {
     border-right: 2px solid white; /* Cursor effect */
     white-space: nowrap; /* Prevent line breaks */
@@ -39,10 +50,40 @@ header {
     color: #ff69b4; /* Pastel pink for text */
 }
 
-/* Sections */
-.section-projects {
-    background-color: #f0e68c; /* Light pastel yellow */
-    padding: 50px 0;
+/* Section Styles */
+section {
+    padding: 50px 0; /* Add padding to sections */
 }
 
-/* Rest of your styles... */
+.section-intro {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for intro */
+}
+
+.section-projects {
+    background-color: #f0e68c; /* Light pastel yellow */
+}
+
+.section-about {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for about */
+}
+
+.section-contact {
+    background-color: #f0e68c; /* Light pastel yellow */
+}
+
+/* Project Styles */
+.project {
+    margin: 20px 0; /* Add margin for each project */
+    padding: 20px;
+    border: 1px solid #ccc; /* Border for project boxes */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    padding: 20px 0;
+    text-align: center; /* Center text in footer */
+}
+
