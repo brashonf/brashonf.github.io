@@ -46,4 +46,3 @@ window.onload = function() {
         stagger: 0.2 // Stagger for each project
     });
 };
-
