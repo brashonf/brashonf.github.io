@@ -120,8 +120,8 @@ section {
 /* Project Circle Styles */
 .project-circle {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Evenly space circles */
 }
 
 .project {
@@ -134,11 +134,12 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 20px 0; /* Space between circles */
-    padding: 20px; /* Padding inside the circle */
+    margin: 20px; /* Space between circles */
+    padding: 10px; /* Padding inside the circle */
     border: 2px solid #ff69b4; /* Pink border */
     box-shadow: 0 0 15px #ff69b4; /* Glowing effect */
     transition: transform 0.3s ease; /* Smooth transform on hover */
+    overflow: hidden; /* Ensure content stays within the circle */
 }
 
 .project:hover {
@@ -146,10 +147,28 @@ section {
     box-shadow: 0 0 30px #ff69b4; /* Intensify glowing effect on hover */
 }
 
-.project h3, .project p, .project a {
+.project h3 {
+    font-size: 1.2em; /* Smaller font for titles */
     margin: 0;
     padding: 5px;
-    color: #f5f5f5;
+}
+
+.project p {
+    font-size: 0.9em; /* Smaller font for descriptions */
+    margin: 0;
+    padding: 5px;
+    overflow-y: auto; /* Enable scrolling for overflow text */
+    max-height: 80px; /* Constrain height to fit within circle */
+}
+
+.project a {
+    margin-top: auto; /* Push link to the bottom */
+    color: #ff69b4; /* Link color */
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
 }
 
 /* Footer Styles */
