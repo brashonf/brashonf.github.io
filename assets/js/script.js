@@ -21,38 +21,22 @@ function createStars() {
 }
 
 const text = "Welcome to My Portfolio!";
-const typedText = document.getElementById("typedText");
+const typedText = document.getElementById('typedText');
 let index = 0;
 
 function type() {
     if (index < text.length) {
-        typedText.textContent += text.charAt(index);
+        typedText.innerHTML += text.charAt(index);
         index++;
         setTimeout(type, 100); // Adjust typing speed
-    } else {
-        typedText.classList.add("typing");
     }
 }
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
     createStars();
-    type(); // Call typing function
+    type();
+});
 
-    // GSAP animation for project sections
-    gsap.from('.project', {
-        duration: 1,
-        opacity: 0,
-        y: 50,
-        stagger: 0.2 // Stagger for each project
-    });
-
-    // Smooth scroll for navigation links
-    document.querySelectorAll('nav ul li a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-};
+document.getElementById('scrollButton').addEventListener('click', function() {
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+});
