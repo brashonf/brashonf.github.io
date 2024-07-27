@@ -56,36 +56,12 @@ nav ul li a:hover {
     color: #ff69b4; /* Change color on hover */
 }
 
-/* Moon Styles */
-.moon {
-    position: absolute;
-    width: 100px; /* Adjust size of the moon */
-    height: 100px; /* Adjust size of the moon */
-    top: 20%; /* Start position */
-    left: -10%; /* Start position off screen */
-    animation: moveMoon 20s linear infinite; /* Infinite loop */
-}
-
-@keyframes moveMoon {
-    0% {
-        left: -10%;
-        top: 20%;
-    }
-    50% {
-        left: 50%;
-        top: 10%;
-    }
-    100% {
-        left: 110%;
-        top: 20%;
-    }
-}
 
 /* Star Styles */
 .star {
     position: absolute;
     border-radius: 50%;
-    background: white; /* Color of the stars */
+    background: pink; /* Color of the stars */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
     animation: twinkle 1s infinite; /* Adjust the duration */
 }
