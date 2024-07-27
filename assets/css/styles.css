@@ -136,12 +136,14 @@ section {
     text-align: center;
     margin: 20px 0; /* Space between circles */
     padding: 20px; /* Padding inside the circle */
-    border: 1px solid #ccc; /* Border for project circles */
+    border: 2px solid #ff69b4; /* Pink border */
+    box-shadow: 0 0 15px #ff69b4; /* Glowing effect */
     transition: transform 0.3s ease; /* Smooth transform on hover */
 }
 
 .project:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 30px #ff69b4; /* Intensify glowing effect on hover */
 }
 
 .project h3, .project p, .project a {
