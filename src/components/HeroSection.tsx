@@ -2,9 +2,9 @@ import { Github, Mail, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const socialLinks = {
-  github: "https://github.com/YOUR_USERNAME",
-  linkedin: "https://linkedin.com/in/YOUR_USERNAME",
-  email: "your.email@example.com"
+  github: "https://github.com/brashonf",
+  linkedin: "https://linkedin.com/in/brashon-ford",
+  email: "brashonford@gmail.com"
 }
 
 const personalInfo = {
