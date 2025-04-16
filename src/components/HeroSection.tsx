@@ -10,7 +10,7 @@ const socialLinks = {
 
 const personalInfo = {
   greeting: "Hi, my name is",
-  name: "Your Name",
+  name: "Brashon Ford",
   title: "Data Scientist",
   description: "I'm a data scientist specializing in building and deploying machine learning models. I transform complex data into actionable insights."
 }
