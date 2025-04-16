@@ -1,15 +1,20 @@
+
 import ProjectCard from "./ProjectCard"
 
 const projects = [
   {
-    title: "Your Project Title",
-    description: "Description of your data science project. What problem did it solve? What technologies did you use?",
-    technologies: ["Python", "scikit-learn", "pandas", "Your Tools"],
-    githubLink: "https://github.com/your-username/project",
-    demoLink: "https://your-demo-link.com",
-    imageUrl: "/placeholder.svg"
+    title: "Admissions Analysis & Interview Behavior",
+    description: "Led analysis of university applications and interview behaviors, exploring trends in application timing, SAT scores, demographics, and interviewer patterns using R (tidyverse, ggplot2, lubridate).",
+    technologies: ["R", "tidyverse", "ggplot2", "lubridate"],
+    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
   },
-  // Add more projects following the same structure
+  {
+    title: "Asset Utilization & Status Analysis",
+    description: "Analyzed 37,000+ records of asset utilization data, identifying optimization opportunities through cycle count and usage hour trends across facilities.",
+    technologies: ["Python", "Data Analysis", "Visualization"],
+    githubLink: "https://github.com/your-username/asset-utilization",
+    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+  }
 ]
 
 const ProjectsSection = () => {

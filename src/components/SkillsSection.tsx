@@ -1,27 +1,27 @@
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Brain, Database, LineChart, Code2 } from "lucide-react"
+import { Code2, Database, LineChart, Brain } from "lucide-react"
 
 const skills = [
   {
-    category: "Data Science",
-    items: ["Statistical Analysis", "Machine Learning", "Deep Learning", "NLP"],
-    icon: Brain
+    category: "Programming Languages",
+    items: ["Python", "R", "SQL"],
+    icon: Code2
   },
   {
     category: "Data Analysis",
-    items: ["Python", "R", "SQL", "Excel"],
+    items: ["Statistical Analysis", "Descriptive Statistics", "Regression Analysis", "Data Visualization"],
     icon: LineChart
   },
   {
-    category: "Tools & Databases",
-    items: ["PostgreSQL", "MongoDB", "Power BI", "Tableau"],
-    icon: Database
+    category: "Machine Learning",
+    items: ["Classification", "Regression", "Clustering", "Predictive Modeling"],
+    icon: Brain
   },
   {
-    category: "Libraries",
-    items: ["scikit-learn", "TensorFlow", "PyTorch", "pandas"],
-    icon: Code2
+    category: "Tools & Platforms",
+    items: ["Tableau", "Power BI", "Jupyter Notebook", "Git"],
+    icon: Database
   }
 ]
 

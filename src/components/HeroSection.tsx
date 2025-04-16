@@ -1,4 +1,3 @@
-
 import { Github, Mail, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -12,7 +11,7 @@ const personalInfo = {
   greeting: "Hi, my name is",
   name: "Brashon Ford",
   title: "Data Scientist",
-  description: "I'm a data scientist specializing in building and deploying machine learning models. I transform complex data into actionable insights."
+  description: "Data professional with an MS in Data Science and experience in statistical modeling, machine learning, and data analysis. Proficient in Python, R, and SQL, specializing in developing predictive models and delivering actionable insights."
 }
 
 const HeroSection = () => {

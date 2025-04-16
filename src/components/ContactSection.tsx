@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail, MessageSquare } from "lucide-react"
@@ -9,8 +8,7 @@ const ContactSection = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-200 mb-2">Get In Touch</h2>
         <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-          I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
-          I'll try my best to get back to you!
+          Currently open to new data science opportunities. Whether you have a question about my projects or would like to discuss potential collaborations, I'd love to hear from you!
         </p>
         <Card className="bg-[#112240] border-gray-800 max-w-md mx-auto">
           <CardContent className="pt-6">
