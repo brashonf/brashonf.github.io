@@ -4,22 +4,22 @@ import { Brain, Database, LineChart, Code2 } from "lucide-react"
 
 const skills = [
   {
-    category: "Machine Learning",
-    items: ["Neural Networks", "Random Forests", "SVM", "Deep Learning"],
+    category: "Data Science",
+    items: ["Statistical Analysis", "Machine Learning", "Deep Learning", "NLP"],
     icon: Brain
   },
   {
     category: "Data Analysis",
-    items: ["Statistical Analysis", "Data Visualization", "Hypothesis Testing", "A/B Testing"],
+    items: ["Python", "R", "SQL", "Excel"],
     icon: LineChart
   },
   {
     category: "Tools & Databases",
-    items: ["SQL", "MongoDB", "Hadoop", "Spark"],
+    items: ["PostgreSQL", "MongoDB", "Power BI", "Tableau"],
     icon: Database
   },
   {
-    category: "Libraries & Frameworks",
+    category: "Libraries",
     items: ["scikit-learn", "TensorFlow", "PyTorch", "pandas"],
     icon: Code2
   }

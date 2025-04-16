@@ -1,30 +1,15 @@
-
 import ProjectCard from "./ProjectCard"
 
 const projects = [
   {
-    title: "Machine Learning Pipeline",
-    description: "End-to-end ML pipeline for predictive analytics using Python and scikit-learn.",
-    technologies: ["Python", "scikit-learn", "pandas", "Docker"],
-    githubLink: "https://github.com",
-    demoLink: "https://demo.com",
+    title: "Your Project Title",
+    description: "Description of your data science project. What problem did it solve? What technologies did you use?",
+    technologies: ["Python", "scikit-learn", "pandas", "Your Tools"],
+    githubLink: "https://github.com/your-username/project",
+    demoLink: "https://your-demo-link.com",
     imageUrl: "/placeholder.svg"
   },
-  {
-    title: "Time Series Analysis",
-    description: "Financial market prediction using advanced time series analysis.",
-    technologies: ["Python", "TensorFlow", "Numpy", "Matplotlib"],
-    githubLink: "https://github.com",
-    imageUrl: "/placeholder.svg"
-  },
-  {
-    title: "NLP Classification",
-    description: "Text classification system using natural language processing.",
-    technologies: ["Python", "NLTK", "Transformers", "PyTorch"],
-    githubLink: "https://github.com",
-    demoLink: "https://demo.com",
-    imageUrl: "/placeholder.svg"
-  }
+  // Add more projects following the same structure
 ]
 
 const ProjectsSection = () => {
